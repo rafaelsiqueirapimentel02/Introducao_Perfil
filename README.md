@@ -5,4 +5,6 @@ Possuo conhecimento básico em JavaScript, MySQL, C# e Firebase.
 
 Tenho conhecimento intermediário de inglês, consigo ler e entender, porém tenho dificuldade na fala e na tradução.
 
+Atualmente cursando Ciência da Computação.
+
 ainda não possuo projetos.
