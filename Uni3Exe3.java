@@ -1,14 +1,19 @@
-public class Uni3Exe3{
+import java.util.Scanner;
 
-    system.out.print("Valor da gasolina: ")
+public class Uni3Exe3{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+
+    System.out.print("Valor da gasolina: ");
     double preco = s.nextDouble();
 
-    system.out.print("Valor do Pagamento: ")
+    System.out.print("Valor do Pagamento: ");
     double valor = s.nextDouble();
 
     double gasolina = (valor/preco);
 
-    system.out.print("O motorista conseguiu colocar "+ gasolina, " litros")
+    System.out.print("O motorista conseguiu colocar " + gasolina + " litros");
 
     s.close();
+    }
 }

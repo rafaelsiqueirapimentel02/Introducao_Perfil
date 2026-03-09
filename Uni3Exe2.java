@@ -1,16 +1,21 @@
+import java.util.Scanner;
+
 public class Uni3Exe2 {
 
-    system.out.print("Valor do Sapato: ")
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+    System.out.print("Valor do Sapato: ");
     double Sapato = s.nextDouble();
 
-    double desconto = (Sapato * 0.12);
+    double desconto = Math.round(Sapato * 0.12 * 100.0) / 100.0;
 
-    system.out.print("o valor do desconto é de: "+ desconto);
+    System.out.print("o valor do desconto é de: "+ desconto);
 
-    double sapatotal = (Sapato - desconto);
+    double sapatotal = Math.round((Sapato - desconto) * 100.0) / 100.0;
 
-    system.out.print("O preço do par de sapatos com desconto é: "+ sapatotal);
+    System.out.print(" O preço do par de sapatos com desconto é: "+ sapatotal);
 
     s.close();
-
+    }
 }

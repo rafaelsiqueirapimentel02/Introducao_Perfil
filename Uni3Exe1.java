@@ -1,15 +1,20 @@
-public class Uni3Exe1{
-scanner s = new scanner(system.in);
+import java.util.Scanner;
 
-System.out.print("Comprimento: ")
+public class Uni3Exe1{
+
+    public static void main(String[] args){
+Scanner s = new Scanner(System.in);
+
+System.out.print("Comprimento: ");
 double Comprimento = s.nextDouble();
 
-System.out.print("Largura: ")
+System.out.print("Largura: ");
 double Largura = s.nextDouble();
 
-double area = (Comprimento * Largura)
+double area = (Comprimento * Largura);
 
-System.out.printin("Área = " + area);
+System.out.println("Área = " + area);
  
 s.close();
+    }
 }

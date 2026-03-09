@@ -1,14 +1,17 @@
+import java.util.Scanner;
+
 public class Uni3Exe12{
 
-    public static void main(string[] args) throws Exception{
+    public static void main(String[] args) throws Exception{
+        Scanner s = new Scanner(System.in);
 
-        System.out.print("Nome: ")
-        double Nome = s.nextDouble();
+        System.out.print("Nome: ");
+        String Nome = s.nextLine();
 
-        System.out.print("Horas Trabalhadas: ")
+        System.out.print("Horas Trabalhadas: ");
         double Horas = s.nextDouble();
 
-        System.out.print("Número de Dependentes: ")
+        System.out.print("Número de Dependentes: ");
         double Dependentes = s.nextDouble();
 
         double salariobase = (Horas * 10);
@@ -19,7 +22,7 @@ public class Uni3Exe12{
         double imposto = (salariobase * 0.05);
         double salarioliquido = (salariobruto - inss - imposto);
 
-        System.out.print("O funcionário " + Nome, "possui um salário bruto de " + salariobruto, " e um salário liquido de " + salarioliquido);
+        System.out.println("O funcionário " + Nome + " possui um salário bruto de " + salariobruto + " e um salário líquido de " + salarioliquido);
 
         s.close();
     }
