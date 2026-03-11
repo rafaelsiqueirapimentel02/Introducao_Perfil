@@ -1,3 +1,5 @@
+package Unidade3;
+
 import java.util.Scanner;
 
 public class Uni3Exe10{
