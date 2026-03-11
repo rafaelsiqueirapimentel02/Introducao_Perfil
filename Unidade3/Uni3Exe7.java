@@ -16,5 +16,7 @@ public class Uni3Exe7 {
         double Litros = (Lata * 0.35) + (Garrafa600 * 0.6) + (Garrafa2l * 2.0);
 
         System.out.println("O cliente comprou ao total " + Litros + " Litros.");
+
+        s.close();
     }
 }
