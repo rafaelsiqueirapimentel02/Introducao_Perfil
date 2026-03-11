@@ -14,9 +14,7 @@ public class Uni3Exe15 {
         int dezena = numero / 10;
         int unidade = numero % 10;
 
-        System.out.println("Centena: " + centena);
-        System.out.println("Dezena: " + dezena);
-        System.out.println("Unidade: " + unidade);
+        System.out.println("Centena(s): " + centena + ", Dezena(s): " + dezena + ", Unidade(s): " + unidade);
 
         scanner.close();
     }
