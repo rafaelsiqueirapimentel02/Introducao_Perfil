@@ -1,10 +1,3 @@
-# Introducao_Perfil
-Descrição das minhas capacidades como profissional.
+# Introducao_Projetos
 
-Possuo conhecimento básico em JavaScript, MySQL, C# e Firebase.
-
-Tenho conhecimento intermediário de inglês, consigo ler e entender, porém tenho dificuldade na fala e na tradução.
-
-Atualmente cursando Ciência da Computação.
-
-ainda não possuo projetos.
+Neste repositório estão todos os projetos desenvolvidos em aula durante o primeiro semestre;
