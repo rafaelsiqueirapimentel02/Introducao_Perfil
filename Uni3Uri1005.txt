@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class Main {
+
+    public static void main(String[] args) {
+     Scanner scanner = new Scanner(System.in);
+        
+        DecimalFormat df = new DecimalFormat("0.00000");
+        Double A = scanner.nextDouble();
+        Double B = scanner.nextDouble();
+        Double pesoA = 3.5;
+        Double pesoB = 7.5;
+        
+        Double MEDIA = (A * pesoA + B * pesoB) / (pesoA + pesoB);
+        
+        System.out.println("MEDIA = " + df.format(MEDIA));
+        
+        scanner.close();
+
+    }
+}
