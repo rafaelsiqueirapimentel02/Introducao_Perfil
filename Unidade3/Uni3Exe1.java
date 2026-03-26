@@ -15,7 +15,7 @@ double Largura = s.nextDouble();
 
 double area = (Comprimento * Largura);
 
-System.out.println("Área = " + area);
+System.out.println("Área = " +area);
  
 s.close();
     }

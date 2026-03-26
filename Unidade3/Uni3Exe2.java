@@ -8,7 +8,6 @@ public class Uni3Exe2 {
 
     System.out.print("Valor do Sapato: ");
     double Sapato = s.nextDouble();
-
     double desconto = Math.round(Sapato * 0.12 * 100.0) / 100.0;
 
     System.out.print("o valor do desconto é de: "+ desconto);
