@@ -7,13 +7,24 @@ public class Main {
     public static void main(String[] args) {
      Scanner scanner = new Scanner(System.in);  
     
-        double R = scanner.nextDouble();
-        double pi = 3.14159;
-        double volume = (4.0/3) * pi * Math.pow(R, 3);
+        float x = scanner.nextFloat();
+        float y = scanner.nextFloat();
         
-        System.out.printf("VOLUME = %.3f%n", volume);
+        if (x == 0 && y == 0)
+            System.out.println("Origem");
+        else if (x == 0 && y != 0) 
+            System.out.println("Eixo Y");
+        else if (y == 0 && x != 0) 
+            System.out.println("Eixo X");
+        else if (x > 0 && y > 0) 
+            System.out.println("Q1");
+        else if (x < 0 && y > 0) 
+            System.out.println("Q2");
+        else if (x < 0 && y < 0) 
+            System.out.println("Q3");
+        else if (x > 0 && y < 0) 
+            System.out.println("Q4");
 
-    scanner.close();
-
+        scanner.close();
     }
 }
