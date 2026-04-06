@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class Uni4Exe13 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Digite Três números correspondentes as seguintes Cartas: ÁS = 1, 2 = 2, 3 = 3, 7 = 7, 11 = VALETE, 12 = DAMA, 13 = REI\n");
         System.out.print("Digite o Primeiro número: ");
         int carta1 = scanner.nextInt();
         System.out.print("Digite o Segundo número: ");
@@ -31,3 +29,21 @@ public class Uni4Exe13 {
     }
 }
 }
+//outra forma de fazer 
+//
+//int boas =0;
+//if(carta1 == 1 || carta1 == 2 || carta1 == 3)
+//     boas++;
+//if(carta2 ==1 || carta2 == 2 || carta2 == 3)
+//     boas++; 
+//if(carta3 == 1 || carta3 ==2 || carta3 == 3)
+//     boas++;
+//if(boas == 1)
+//  System.out.println("Truco")
+//if(boas == 2)
+//  System.out.println("Seis")
+//if(boas == 3)
+//  System.out.println("Nove")
+ 
+ 
+

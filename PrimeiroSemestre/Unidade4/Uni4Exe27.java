@@ -16,7 +16,11 @@ public class Uni4Exe27 {
         int hor = horsaida - horcheg;
         int min = minsaida - mincheg;
 
-        if ((hor < 0 && hor > 24) || (min < 0 && min > 59)) {
+        if (min < 0) {
+            hor--;
+            min += 60;  
+        }
+        if ((horcheg < 0 || horcheg > 23) || (mincheg < 0 || mincheg > 59) || (horsaida < 0 || horsaida > 23) || (minsaida < 0 || minsaida > 59)) {
             System.out.println("Horário inválido. Por favor, insira um horário válido.");
         } else {
             int horasEstacionado = hor;
