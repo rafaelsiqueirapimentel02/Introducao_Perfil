@@ -24,17 +24,22 @@ public class Uni4Exe27 {
             System.out.println("Horário inválido. Por favor, insira um horário válido.");
         } else {
             int horasEstacionado = hor;
-            if (min > 0) {
+            if (min >= 30) {
                 horasEstacionado++;
             }
-
             double preco;
-            if (horasEstacionado <= 2) {
-                preco = horasEstacionado * 5.00;
-            } else if (horasEstacionado <= 4) {
-                preco = 2 * 5.00 + (horasEstacionado - 2) * 7.50;
-            } else {
-                preco = 2 * 5.00 + 2 * 7.50 + (horasEstacionado - 4) * 10.00;
+            switch (horasEstacionado) {
+                case 1:
+                case 2:
+                    preco = horasEstacionado * 5.00;
+                    break;
+                case 3:
+                case 4:
+                    preco = 2 * 5.00 + (horasEstacionado - 2) * 7.50;
+                    break;
+                default:
+                    preco = 2 * 5.00 + 2 * 7.50 + (horasEstacionado - 4) * 10.00;
+                    break;
             }
             System.out.println("Preço a ser cobrado: R$ " + preco);
         }
