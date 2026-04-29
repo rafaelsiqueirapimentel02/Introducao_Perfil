@@ -9,8 +9,9 @@ public class Uni5Exe4 {
         int s = 0;
 
         for (int i = 0; i <= 19; i++){
-            int rand = (int) (Math.random() * 5000); // Gerar um número aleatório entre 0 e 100
-            s += rand;
+            System.out.print("Digite um número: ");
+            int n = scanner.nextInt();
+            s += n;
         }
         System.out.println("A soma dos 20 termos é: " + s);
         scanner.close();
