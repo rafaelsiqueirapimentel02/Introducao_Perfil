@@ -17,7 +17,7 @@ public class Uni5Exe7 {
             double num = scanner.nextDouble();
 
             if (num > maior) {
-                maior = num;
+               maior = num;
             }
             if (num < menor) {
                 menor = num;
