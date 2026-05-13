@@ -4,56 +4,73 @@ import java.util.Scanner;
 
 public class Uni5Exe27 {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         int escolha = 1;
-        int pecasTotalManha = 0;
-        int pecasTotalTarde = 0;
-        double salário = 0;
+
+        double maiorSalario = Double.NEGATIVE_INFINITY;
+        int diaMaisProd = 0;
 
         while (escolha == 1) {
+
             System.out.print("Digite o dia de Abril: ");
             int dia = scanner.nextInt();
 
             while (dia < 1 || dia > 30) {
-                System.out.print("Dia inválido");
+                System.out.print("Dia inválido, digite novamente: ");
                 dia = scanner.nextInt();
             }
 
-            if (dia >= 1 || dia <= 15) {
-                System.out.print("Total de peças produzidas pela manhã: ");
-                int manha = scanner.nextInt();
-                pecasTotalManha += manha;
+            System.out.print("Peças produzidas pela manhã: ");
+            int manha = scanner.nextInt();
 
-                System.out.print("Total de peças produzidas pela tarde: ");
-                int tarde = scanner.nextInt();
-                pecasTotalTarde += tarde;
+            System.out.print("Peças produzidas pela tarde: ");
+            int tarde = scanner.nextInt();
 
+            int total = manha + tarde;
 
-                if (pecasTotalManha >= 30 && pecasTotalTarde >=30) {
-                    int pecasTotal = pecasTotalManha + pecasTotalTarde;
-                    salário = 0.80 * pecasTotal;
+            double salario;
 
+            // Dias 1 a 15
+            if (dia >= 1 && dia <= 15) {
+
+                if (manha >= 30 && tarde >= 30 && total >= 100) {
+                    salario = total * 0.80;
                 } else {
-                    int pecasTotal = pecasTotalManha + pecasTotalTarde;
-                    salário = 0.50 * pecasTotal;
+                    salario = total * 0.50;
                 }
+
+            }
+            // Dias 16 a 30
+            else {
+
+                salario = (manha * 0.40) + (tarde * 0.30);
             }
 
-            else if (dia >= 16 && dia <= 30) {
-                System.out.print("Total de peças produzidas pela manhã: ");
-                int manha = scanner.nextInt();
-                pecasTotalManha += manha;
+            // Maior salário
+            if (salario > maiorSalario) {
+                maiorSalario = salario;
+                diaMaisProd = dia;
+            }
 
-                System.out.print("Total de peças produzidas pela tarde: ");
-                int tarde = scanner.nextInt();
-                pecasTotalTarde += tarde;
-             
-                double manha2 = 0.40 * pecasTotalManha;
-                double tarde2 = 0.30 * pecasTotalTarde; 
-             }
+            System.out.println("Salário: R$ " + salario);
+
+            // Comparação produção
+            if (manha > tarde) {
+                System.out.println("Produziu mais pela manhã!");
+            } else if (tarde > manha) {
+                System.out.println("Produziu mais pela tarde!");
+            } else {
+                System.out.println("Produção igual nos dois períodos!");
+            }
+
+            System.out.print("Deseja cadastrar mais um funcionário? (1-sim / 2-não): ");
+            escolha = scanner.nextInt();
         }
 
+        System.out.println("Dia mais produtivo: " + diaMaisProd);
 
+        scanner.close();
     }
 }
