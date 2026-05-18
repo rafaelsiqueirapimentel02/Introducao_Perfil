@@ -32,7 +32,7 @@ public class Uni5Exe27 {
 
             double salario;
 
-            // Dias 1 a 15
+            
             if (dia >= 1 && dia <= 15) {
 
                 if (manha >= 30 && tarde >= 30 && total >= 100) {
@@ -42,7 +42,6 @@ public class Uni5Exe27 {
                 }
 
             }
-            // Dias 16 a 30
             else {
 
                 salario = (manha * 0.40) + (tarde * 0.30);
